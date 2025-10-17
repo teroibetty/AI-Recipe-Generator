@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -19,7 +20,7 @@
         <h2>Kenyan Recipes</h2>
       </header>
       <main>
-        <form class="recipe-form">
+        <form class="recipe-form" id="recipe-form">
           <input
             type="text"
             placeholder="Enter ingredients..."
@@ -30,7 +31,7 @@
           <input type="submit" class="submit-button" />
         </form>
         <br />
-        <div class="recipe">Generating recipe...</div>
+        <div class="recipe" id="recipe">Generating recipe...</div>
         <br />
       </main>
       <footer>
