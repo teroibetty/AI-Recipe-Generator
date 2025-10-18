@@ -39,8 +39,10 @@ h2 {
 .recipe {
   font-size: 18px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #eeece8;
+  border-radius: 8px;
   padding: 20px;
+  border-left: #f2910a 2px solid;
 }
 footer {
   text-align: center;
