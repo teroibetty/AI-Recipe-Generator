@@ -36,6 +36,11 @@ h2 {
   color: white;
   cursor: pointer;
 }
+.hint {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
 .recipe {
   font-size: 18px;
   line-height: 1.5;
@@ -44,8 +49,24 @@ h2 {
   padding: 20px;
   border-left: #f2910a 2px solid;
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
-  margin-top: 20px;
   font-size: 14px;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

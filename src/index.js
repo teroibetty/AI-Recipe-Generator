@@ -15,6 +15,13 @@ function generateRecipe(event) {
   let context =
     "You are a world class chef that creates delicious recipes, create recipes that are easy to follow and fun to make, make the recipes very short, include a title for recipe and use <strong><strong> element, each step should be in a new line, use <br /> to create a new line.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="blink">
+      Generating recipe using: ${instructionsElement.value}...
+    </div>`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 
